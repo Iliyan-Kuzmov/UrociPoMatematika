@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header {
+    margin-top: 50px;
+    text-align: center;
+    background-color: #B0E0E6;
+    padding: 3% 7%;
+    border-radius: 20px;
+    font-size: 1.3rem;
+}
+
+.navigation-stack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    margin-top: 50px;
+}
+
+.nav-child {
+    width: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.nav-container {
+    background-color: #B0E0E6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: black;
+}
+
+.text-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container {
+    margin-top: 5vh;
+    width: 90%;
+    font-size: 1.3rem;
+    background-color: #B0E0E6;
+    color: #333;
+    padding: 1% 3%;
+    line-height: 25px;
+    border-radius: 20px;
+    box-shadow: -5px 3px 5px 1px rgba(0, 0, 0, .28);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info-header {
+    background-color: white;
+    border-radius: 20%;
+    color: #333;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1% 2%;
+    border: 1px solid #333;
+}
+
+.info-text {
+    margin-top: 2vh;
+}
+
+.contacts-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.contacts-wrapper {
+    margin: auto;
+}
+
+#contact,
+#cena,
+#info {
+    width: fit-content;
+    margin: auto;
+}
+
+.zanimania-list {
+    margin-left: 6%;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.zanimania-list>li::before {
+    content: "– ";
+}
+
+.ceni-list {
+    list-style-type: disc;
+    margin-left: 15%;
+}
+
+
+/* Responsive design */
+
+@media only screen and (max-width: 1200px) {
+    .nav-container {
+        font-size: 2rem;
+        gap: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav-container {
+        font-size: 1.8rem;
+        gap: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .nav-container {
+        font-size: 1.7rem;
+        gap: 0.5rem;
+    }
+    .contacts-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .nav-container {
+        font-size: 1.3rem;
+        gap: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .nav-container {
+        font-size: 1rem;
+        gap: 0.3rem;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .nav-container {
+        font-size: 0.8rem;
+        gap: 0.3rem;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
